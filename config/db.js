@@ -9,7 +9,10 @@ var con = mysql.createConnection({
 
 con.connect(function(err) {
   
-  if (err) console.log(err);
+  if (err) {
+    console.log(err)
+    return;
+  }
   console.log("Connected!");
   
   
