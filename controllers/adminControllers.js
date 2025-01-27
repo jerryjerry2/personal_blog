@@ -10,6 +10,7 @@ const getAll = (req, res) => {
         if(err){
             console.log(err);
         }else{
+            console.log('admin', result);
             res.render('admin/list-personal-info', {result});
         }
     }) 
